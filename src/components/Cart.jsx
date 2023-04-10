@@ -8,7 +8,7 @@ import { useEffect } from "react";
 function Cart() {
   const [totalPrice, setTotalPrice] = useState(0);
   const [{ basket }, dispatch] = useStateValue();
-  var price = 0;
+  let price = 0;
   useEffect(() => {
     basket.map((item) => {
       price += parseFloat(item.price);
